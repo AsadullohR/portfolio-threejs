@@ -1,5 +1,17 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 
+body {
+  /* font-family: "Poppins", "Roboto", "Josephine Sans", sans-serif; */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -77,4 +89,35 @@ blockquote p {
 
 .left {
   grid-column: 6 / 12;
+}
+
+.lists {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-me_btn {
+  padding: 0.5rem 2rem;
+  background: coral;
+  color: white;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+
+  border: none;
+  transition: 0.4s;
+}
+.contact-me_btn:hover {
+  background: white;
+  color: coral;
+  transition: 0.4s;
+}
+.link {
+  text-decoration: none;
+  color: blueviolet;
+}
+.link:hover {
+  color: aliceblue;
 }

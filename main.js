@@ -12,6 +12,8 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(window.innerWidth, window.innerHeight)
 camera.position.setZ(30)
+camera.position.setX(-3)
+
 renderer.render(scene, camera)
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100)
@@ -82,8 +84,8 @@ function moveCamera() {
     moon.rotation.y += 0.075;
     moon.rotation.z += 0.05;
 
-    jeff.rotation.y += 0.01;
-    jeff.rotation.z += 0.01;
+    profile.rotation.y += 0.01;
+    profile.rotation.z += 0.01;
 
     camera.position.z = t * -0.01;
     camera.position.x = t * -0.0002;
@@ -101,7 +103,8 @@ function animate() {
     torus.rotation.y += 0.005;
     torus.rotation.z += 0.01;
 
-    controls.update()
+    moon.rotation.x += 0.005;
+    // controls.update()
 
     renderer.render(scene, camera)
 }
