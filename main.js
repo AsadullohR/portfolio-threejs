@@ -47,18 +47,7 @@ function addStar() {
 
 Array(200).fill().forEach(addStar)
 
-const spaceTexture = new THREE.TextureLoader().load(
-(
-    // resource URL
-    'space.jpg',
-    // Function when resource is loaded
-    function ( texture ) {
-        // do something with the texture
-        var material = new THREE.MeshBasicMaterial( {
-            map: texture
-         } );
-    }
-)
+const spaceTexture = new THREE.TextureLoader().load('space.jpg')
 scene.background = spaceTexture
 
 const profileTexture = new THREE.TextureLoader().load('/profile.jpg')
