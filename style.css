@@ -34,7 +34,7 @@ main {
   position: absolute;
   width: 100%;
   margin: 0px auto;
-  padding: 120px 0px;
+  padding: 7.5rem 0rem;
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -120,4 +120,10 @@ blockquote p {
 }
 .link:hover {
   color: aliceblue;
+}
+
+@media only screen and (max-width: 768px) {
+section {
+    grid-column: 2/10;
+  }
 }
